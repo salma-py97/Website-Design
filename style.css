@@ -12,11 +12,12 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .col-left{
-    width: 50%;
+    /* width: 50%; */
     height: 100vh;
     background-color: #252529;
     position: relative;
@@ -27,7 +28,7 @@
 }
 
 .col-right{
-    width: 50%;
+    /* width: 50%; */
     height: 100vh;
     /* background-image: url("https://images.pexels.com/photos/2158963/pexels-photo-2158963.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); */
     background-image: url("bike.jfif");
@@ -154,4 +155,11 @@ li:hover{
     .col-left .nav{
         width: 80%;
     }
+    .main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 }
